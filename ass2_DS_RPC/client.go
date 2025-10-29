@@ -35,10 +35,9 @@ func main() {
 		client.Call("Chat.SendMessage", args, &messages)
 
 		// Print all messages
-		// fmt.Println("\n--- Chat History ---")
 		for _, m := range messages {
 			fmt.Printf("%s: %s\n", m.ClientName, m.Text)
 		}
-		// fmt.Println("--------------------\n")
+	
 	}
 }
